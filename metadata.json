@@ -1,0 +1,6 @@
+{
+  "name": "QRVerse",
+  "description": "Generate Beautiful QR Codes Instantly - Create customizable QR codes with custom colors, logos, and advanced features.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
