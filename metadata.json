@@ -1,0 +1,6 @@
+{
+  "name": "QRVerse",
+  "description": "Generate Beautiful, Cryptographically Secure QR Codes - Fully customize quiet zone sizes, choose between square or rounded pixel styles, embed branding logos, sign payloads with safety tokens, and download high-resolution PNG, SVG, and PDF formats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
