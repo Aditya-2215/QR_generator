@@ -23,6 +23,7 @@ export interface QR {
   size: number;
   margin: number;
   logo?: string; // base64 or path
+  pixelStyle?: string;
   downloads: number;
   favorites: string[]; // List of user IDs who favorited this QR
   userId?: string; // Creator user id

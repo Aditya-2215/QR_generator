@@ -45,6 +45,7 @@ export const QRController = {
         size = 256,
         margin = 4,
         logo,
+        pixelStyle = "square",
       } = req.body;
 
       if (!url) {
@@ -83,6 +84,7 @@ export const QRController = {
           size,
           margin,
           logo,
+          pixelStyle,
           userId: req.user.id,
         });
       }
@@ -159,7 +161,7 @@ export const QRController = {
         return res.status(403).json({ error: "Access denied. You do not own this." });
       }
 
-      const { title, url, foregroundColor, backgroundColor, size, margin, logo } = req.body;
+      const { title, url, foregroundColor, backgroundColor, size, margin, logo, pixelStyle } = req.body;
 
       // Sanitize and validate URL if it's a web URL type
       let processedUrl = url;
@@ -175,6 +177,7 @@ export const QRController = {
         size,
         margin,
         logo,
+        pixelStyle,
       });
 
       return res.status(200).json({ success: true, qr: updatedQr });

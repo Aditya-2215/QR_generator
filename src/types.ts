@@ -26,6 +26,7 @@ export interface QR {
   size: number;
   margin: number;
   logo?: string; // base64 or custom symbol path
+  pixelStyle?: "square" | "rounded";
   downloads: number;
   favorites: string[]; // List of user IDs who favorited this QR
   userId?: string;
@@ -42,6 +43,7 @@ export interface QRFormData {
   size: number;
   margin: number;
   logo?: string;
+  pixelStyle?: "square" | "rounded";
   // Specific type fields
   wifiSSID?: string;
   wifiPassword?: string;
